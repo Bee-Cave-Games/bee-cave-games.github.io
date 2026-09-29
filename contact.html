@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - Bee Cave Games</title>
+<meta name="description" content="Contact Bee Cave Games.">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav">
+  <a class="brand" href="./"><img src="img/logo.png" alt=""><span>Bee Cave</span></a>
+  <div class="links">
+    <a href="./">Home</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a class="here" href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="sub"><h1>Contact</h1></header>
+
+<main class="page contact">
+  <p>To report a bug or to get in contact for business opportunities reach out at: <a href="mailto:beecavecontactatx@gmail.com">beecavecontactatx@gmail.com</a></p>
+</main>
+
+<script>
+  var nav = document.getElementById("nav");
+  function sync() { nav.classList.toggle("solid", window.scrollY > 40); }
+  window.addEventListener("scroll", sync, { passive: true });
+  sync();
+</script>
+</body>
+</html>

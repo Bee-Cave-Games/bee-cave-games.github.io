@@ -9,57 +9,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-<style>
-  :root { --heading: #226e93; --text: #212121; --nav: rgba(33, 33, 33, 0.95); }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: #fff; color: var(--text); font-family: Lato, Arial, sans-serif; font-size: 11pt; line-height: 1.6; }
-  a { color: var(--heading); }
-
-  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 2; display: flex; align-items: center; gap: 16px;
-        padding: 8px 28px; transition: background 0.2s; }
-  nav.solid { background: var(--nav); }
-  nav .brand { display: flex; align-items: center; gap: 14px; color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: 400; margin-right: auto; }
-  nav .brand img { width: 40px; height: 40px; display: block; }
-  nav .links a { color: rgba(255, 255, 255, 0.85); text-decoration: none; margin-left: 24px; font-size: 1rem; }
-  nav .links a.here { color: #fff; font-weight: 700; }
-  nav .links a:hover { color: #fff; }
-
-  header { position: relative; height: 340px; display: flex; align-items: center; justify-content: center; text-align: center;
-           background: url("img/hero.png") center / cover no-repeat #969696; }
-  header::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.4); }
-  header h1 { position: relative; margin: 32px 16px 0; color: #fff; font-family: Arial, Helvetica, sans-serif; font-weight: 400;
-              font-size: clamp(2.8rem, 8vw, 5.3rem); letter-spacing: 0.02em; line-height: 1.1; }
-
-  main { max-width: 1200px; margin: 0 auto; padding: 24px 16px 8px; }
-  h2 { color: var(--heading); font-weight: 300; font-size: clamp(1.7rem, 4.2vw, 2.85rem); line-height: 1.25; margin: 12px 0; }
-  .intro { text-align: center; margin-bottom: 36px; }
-  .game { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 36px; margin-bottom: 48px; align-items: start; }
-  .game img { width: 100%; height: auto; display: block; image-rendering: auto; }
-  .game img.pixel { image-rendering: pixelated; }
-  .game p { margin: 8px 0; overflow-wrap: anywhere; }
-
-  footer { max-width: 1200px; margin: 0 auto; padding: 0 16px 40px; }
-  footer .social { display: flex; gap: 12px; padding-left: 12%; }
-  footer .social img { width: 32px; height: 32px; display: block; }
-
-  @media (max-width: 700px) {
-    nav { padding: 8px 16px; }
-    nav .links a { margin-left: 14px; font-size: 0.9rem; }
-    nav .brand span { display: none; }
-    header { height: 260px; }
-    .game { grid-template-columns: 1fr; gap: 12px; }
-    footer .social { padding-left: 0; justify-content: center; }
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav id="nav">
   <a class="brand" href="./"><img src="img/logo.png" alt=""><span>Bee Cave</span></a>
   <div class="links">
     <a class="here" href="./">Home</a>
-    <a href="https://sites.google.com/view/beecave/privacy-policy">Privacy Policy</a>
-    <a href="https://sites.google.com/view/beecave/contact">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="contact.html">Contact</a>
   </div>
 </nav>
 
